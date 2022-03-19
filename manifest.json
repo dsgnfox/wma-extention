@@ -1,0 +1,33 @@
+{
+    "name": "Getting Started Example",
+    "description": "Build an Extension!",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "scripting"
+    ],
+    "host_premissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "match_origin_as_fallback": true,
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "/images/monkey128x128.png"
+        }
+    },
+    "icons": {
+        "128": "/images/monkey128x128.png"
+    }
+  }

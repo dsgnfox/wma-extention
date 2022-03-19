@@ -1,0 +1,40 @@
+body {
+  background: #262527;
+  width: 340px;
+  margin: 0;
+  padding: 0;
+}
+
+.popup {
+  padding: 15px;
+}
+
+.popup__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  padding: 0 0 5px;
+  border-bottom: 1px solid #c1c1c1;
+  color: #fff;
+}
+
+.action-button {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin: 0 0 5px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  background-color: #cac9c9;
+  padding: 5px;
+}
+
+.action-button:last-child {
+  margin: 0;
+}
+
+.action-button:hover {
+  background-color: #fff;
+}
